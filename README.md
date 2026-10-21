@@ -149,11 +149,3 @@ progress.go    采样、速度/ETA、Snapshot/Stats
 hub.go         事件总线、序列号、背压、回放
 subscribe.go   Subscribe、Event、SubscribeOption
 ```
-
-## 测试
-
-```bash
-go test ./... -count=1
-```
-
-测试使用 `httptest` 覆盖 Range/无 Range、暂停恢复、取消后恢复、远端文件变化、sidecar 与目标文件不一致、404、路径穿越、去重/幂等、覆盖策略、事件顺序与回放、慢订阅者踢出、Close、限速器与状态机。
